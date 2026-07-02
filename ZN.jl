@@ -100,7 +100,7 @@ function to_dense(a::CyclicGroupAlgebraElement; max_size::Integer=big(10)^100)
 
     arr = zeros(ComplexF64, Int(N))
     for (x, c) in a.coefficients
-        arr[Int(x.value)+1] = c  # +1 因为Julia数组从1开始索引
+        arr[Int(x.value)+1] = c  
     end
     arr
 end
@@ -212,7 +212,7 @@ function Base.:*(a::CyclicGroupAlgebraElement, b::CyclicGroupAlgebraElement)
 
     for (x, c1) in a.coefficients
         for (y, c2) in b.coefficients
-            z = x + y  # 群元素的加法
+            z = x + y 
             product = c1 * c2
             if (z=findGroupkey(coeffs,z))!=false
                 coeffs[z] += product
