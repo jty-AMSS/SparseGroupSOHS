@@ -7,7 +7,7 @@ The current implementation focuses on cyclic groups $ \mathbb{Z}_N $. It generat
 The experiments were reproduced in Linux. To reproduce the experiment, start Julia and execute `include("Ex0.jl")`.
 ## Files
 - `ZN.jl`: Basic implementation of cyclic group elements and elements of   $ \mathbb{C}[\mathbb{Z}_N] $, including algebra operations and Fourier transforms.
-- `Ex0.jl`: Numerical experiment for the sparse FSOShierarchy over  $ Z_N$.
+- `Ex0.jl`: Numerical experiment for the sparse FSOS hierarchy over  $ Z_N$.
 
 ## Requirements
 
