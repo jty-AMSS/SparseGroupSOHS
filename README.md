@@ -2,7 +2,7 @@
 
 This repository contains Julia code for the numerical experiments in the paper: Sparse Sum of Hermitian Squares in Group Algebras of Finite Groups.
 
-The current implementation focuses on cyclic groups $ \mathbb{Z}_N $. It generates random self-adjoint elements in the group algebra $ \mathbb{C}[\mathbb{Z}_N] $, rescales them to satisfy $ \alpha \succeq f \succeq 1$, and solves semidefinite feasibility problems to find sparse Fourier sum-of-squares certificates.
+The current implementation focuses on cyclic groups $ \mathbb{Z}_N $. It generates random self-adjoint elements in the group algebra $ \mathbb{C}[\mathbb{Z}_N] $, rescales them to satisfy $ 1 \succeq f \succeq  \alpha $, and solves semidefinite feasibility problems to find sparse Fourier sum-of-squares certificates.
 
 The experiments were reproduced in Linux. To reproduce the experiment, start Julia and execute `include("Ex0.jl")`.
 ## Files
